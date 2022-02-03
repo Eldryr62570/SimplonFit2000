@@ -3,8 +3,10 @@ const tap_dropdown = document.getElementById("tap_dropdown")
 const dropdown = document.getElementById("dropdown")
 var dropdown_dropped = false
 
+
 window.onload = function(){
     set_dropdown()
+    bonjour.style = 7;
 }
 
 function set_dropdown(){
