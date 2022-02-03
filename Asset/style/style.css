@@ -4,7 +4,10 @@
 
 body {
   margin: 0;
+  padding: 0;
+  width: 100vw;
   background-color: black;
+  overflow-x: hidden;
 }
 header {
   height: 7vh;
@@ -22,7 +25,9 @@ header {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
-
+.navbarHeight {
+  height: 100px;
+}
 .dropdown {
   opacity: 0;
   position: fixed;
@@ -40,6 +45,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  z-index: 10;
 }
 
 .navbar_btn {
@@ -102,7 +108,7 @@ header {
 
 /*------*/
 .sportContainer {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   background-color: aliceblue;
   display: flex;
@@ -111,6 +117,8 @@ header {
 .videoContainer {
   display: flex;
   justify-content: center;
+  height: 150vh;
+  width: 100vw;
 }
 video {
   height: auto;
@@ -119,11 +127,62 @@ video {
   opacity: 1;
 }
 .videoJs {
-  display: none;
+  position: absolute;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 1s ease-in-out;
 }
 .display {
-  display: block;
+  position: absolute;
+  margin: 0 auto;
+  opacity: 1;
+  transition: 1s ease-in-out;
 }
-.remove {
-  visibility: hidden;
+.paragraphSport {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150vh;
+  width: 100vw;
+  color: beige;
+}
+.sectionSport {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+}
+.titleSport {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 500%;
+  padding: 20px;
+}
+.textSport {
+  color: white;
+  width: 50vw;
+  align-self: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+.whiteSport {
+  height: 80vh;
+  width: 100vw;
+  background-color: white;
+  z-index: 10;
+}
+.whiteTitle {
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-size: 500%;
+  padding: 20px;
+}
+.whiteText {
+  color: black;
+  width: 50vw;
+  align-self: center;
+  margin: 0 auto;
+  padding: 10px;
 }
