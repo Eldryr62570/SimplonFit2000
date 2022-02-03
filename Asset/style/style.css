@@ -108,7 +108,22 @@ header {
   display: flex;
   justify-content: center;
 }
+.videoContainer {
+  display: flex;
+  justify-content: center;
+}
 video {
   height: 100vh;
   width: auto;
+  transition: 1s;
+  opacity: 1;
+}
+.videoJs {
+  display: none;
+}
+.display {
+  display: block;
+}
+.remove {
+  visibility: hidden;
 }
