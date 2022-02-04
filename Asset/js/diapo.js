@@ -11,7 +11,7 @@ let flag = 1;
 const affichage = () => {
   setInterval(() => {
     //arrivé à 4 on retourne i à 0, et on met flag à 0
-    if (i == 4) {
+    if (i == videoJs.length - 1) {
       i = 0;
       flag = 0;
     }

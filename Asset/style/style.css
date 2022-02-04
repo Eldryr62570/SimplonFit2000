@@ -1,13 +1,40 @@
 * {
   margin: 0px;
 }
-
+/* latin-ext */
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/titilliumweb/v14/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGIVzY4SY.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/titilliumweb/v14/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGItzYw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url(/Asset/font/BebasNeue-Regular.ttf);
+}
 body {
+  font-family: "BebasNeue-Regular";
   margin: 0;
+  border: 0;
   padding: 0;
   width: 100vw;
   background-color: black;
   overflow-x: hidden;
+  position: relative;
 }
 header {
   height: 7vh;
@@ -120,11 +147,17 @@ header {
   height: 150vh;
   width: 100vw;
 }
+@media screen and (max-width: 600px) {
+  .videoContainer {
+    display: none;
+  }
+}
 video {
   height: auto;
   width: 100vw;
   transition: 1s;
   opacity: 1;
+  overflow-x: hidden;
 }
 .videoJs {
   position: absolute;
@@ -138,51 +171,111 @@ video {
   opacity: 1;
   transition: 1s ease-in-out;
 }
-.paragraphSport {
+/*Section Sport*/
+.sectionSport div {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  height: 150vh;
-  width: 100vw;
-  color: beige;
-}
-.sectionSport {
-  background-color: black;
+  font-weight: bold;
+  width: 100%;
   height: 100vh;
-  width: 100vw;
-  justify-content: center;
 }
-.titleSport {
+.sectionSport div:nth-child(1) {
+  background-attachment: fixed;
+  background-image: url(/Asset/img/tennis.jpg);
+  background-size: cover;
+}
+.sectionSport div:nth-child(2) {
+  background: maroon;
+}
+.sectionSport div:nth-child(3) {
+  background-attachment: fixed;
+  background-image: url(/Asset/img/muscu.jpg);
+  background-size: cover;
+}
+.section_sport div:nth-child(4) {
+  background: black;
+}
+h2 {
+  background-color: red;
   color: white;
+  width: fit-content;
+  padding: 2px 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-bottom: 7%;
+  transform: skewX(-13deg);
+}
+.socials {
+  padding: 0;
+}
+footer {
+  font-family: "Titillium Web";
+  background: #ccc;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 99vw;
+  padding-top: 50px;
+  height: 3%;
+  background-image: url(/Asset/img/muscu.jpg);
+  background-size: 100%;
+  background-position: 25% 75%;
+  z-index: -10;
+}
+.footerContent {
   width: 100%;
   text-align: center;
-  font-size: 500%;
-  padding: 20px;
+  justify-content: center;
+  padding: 10px 10px 10px 0;
 }
-.textSport {
-  color: white;
-  width: 50vw;
-  align-self: center;
-  margin: 0 auto;
-  padding: 10px;
-}
-.whiteSport {
-  height: 80vh;
-  width: 100vw;
-  background-color: white;
+.footerContent ul {
+  height: 50px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
   z-index: 10;
 }
-.whiteTitle {
-  color: black;
-  width: 100%;
-  text-align: center;
-  font-size: 500%;
-  padding: 20px;
+.footerContent i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  font-size: 250%;
+  color: rgb(255, 255, 255);
 }
-.whiteText {
-  color: black;
-  width: 50vw;
-  align-self: center;
-  margin: 0 auto;
+.footerContent i:hover {
+  color: rgb(114, 114, 114);
+  transition: 0.5s;
+}
+.footerContent a {
+  text-decoration: none;
+}
+footer h4 {
   padding: 10px;
+}
+footer .filterFooter {
+  background-color: rgba(0, 0, 0, 0.212);
+  height: 100%;
+  overflow: auto;
+}
+footer .textFooter {
+  align-items: center;
+  color: white;
+}
+footer h4 {
+  color: white;
+}
+li {
+  z-index: 20;
+}
+.filterBlack {
+  background-color: rgba(0, 0, 0, 0.548);
+  height: 100%;
+  position: absolute;
+  bottom: 0%;
+  display: flex;
 }
