@@ -214,6 +214,18 @@ video {
   width: 50%;
   color: white;
 }
+.petanqueSection {
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(59, 59, 59);
+}
+.petanqueSection p {
+  color: white;
+  width: 50%;
+}
 
 /*Petanque*/
 
@@ -255,7 +267,7 @@ footer {
   background-image: url(/Asset/img/muscu.jpg);
   background-size: 100%;
   background-position: 25% 75%;
-  z-index: -10;
+  z-index: 9;
 }
 .footerContent {
   width: 100%;
