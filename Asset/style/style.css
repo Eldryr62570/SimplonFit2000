@@ -314,7 +314,7 @@ footer {
   bottom: 0;
   width: 99vw;
   padding-top: 50px;
-  height: 3%;
+  height: 2%;
   background-image: url(/Asset/img/muscu.jpg);
   background-size: 100%;
   background-position: 25% 75%;
@@ -399,7 +399,7 @@ label {
 }
 
 input[type="submit"] {
-  background-color: #d80000;
+  background-color: #d80000a8;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -408,7 +408,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #7c0000;
+  background-color: #7c00009a;
 }
 
 .containerContact {
