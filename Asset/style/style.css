@@ -94,6 +94,11 @@ header {
   opacity: 0.7;
   transition: all 0.5s;
 }
+@media screen and (max-width: 600px) {
+  .navbar_img {
+    padding: 20px;
+  }
+}
 
 .navbar_img:hover {
   opacity: 1;
@@ -189,11 +194,16 @@ video {
 .sectionSport div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  background: maroon;
+  background: rgb(202, 1, 1);
 }
 .sectionSport div:nth-child(2) p {
   font-size: 1.5em;
   width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .sectionSport div:nth-child(2) p {
+    font-size: 1em;
+  }
 }
 
 /*Musculation*/
@@ -214,6 +224,11 @@ video {
   width: 50%;
   color: white;
 }
+@media screen and (max-width: 600px) {
+  .sectionSport div:nth-child(4) p {
+    font-size: 1em;
+  }
+}
 .petanqueSection {
   height: 150vh;
   display: flex;
@@ -225,6 +240,12 @@ video {
 .petanqueSection p {
   color: white;
   width: 50%;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 600px) {
+  .petanqueSection p {
+    font-size: 1em;
+  }
 }
 
 /*Petanque*/
