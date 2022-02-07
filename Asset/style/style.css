@@ -271,6 +271,36 @@ h2 {
   margin-bottom: 7%;
   transform: skewX(-13deg);
 }
+/*Skate*/
+#parallax4 {
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url(/Asset/img/skate.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skateSection {
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(148, 1, 1, 0.884);
+}
+.skateSection p {
+  color: white;
+  width: 50%;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 600px) {
+  .skateSection p {
+    font-size: 1em;
+  }
+}
+
+/*Footer*/
 .socials {
   padding: 0;
 }
@@ -369,7 +399,7 @@ label {
 }
 
 input[type="submit"] {
-  background-color: #1255a2;
+  background-color: #d80000;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -378,7 +408,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #1872d9;
+  background-color: #7c0000;
 }
 
 .containerContact {
