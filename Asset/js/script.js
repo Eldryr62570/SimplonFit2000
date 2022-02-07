@@ -1,4 +1,3 @@
-
 const navbar = document.getElementById("navbar")
 const tap_dropdown = document.getElementById("tap_dropdown")
 const dropdown = document.getElementById("dropdown")
@@ -44,4 +43,3 @@ window.addEventListener('click', function(e){
 tap_dropdown.onclick = function(){
     dropdown_dropped = !dropdown_dropped; set_dropdown();
 }
-
