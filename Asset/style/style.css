@@ -54,6 +54,7 @@ header{
     align-items: center;
     justify-content: center;
 }
+
 .navbar_btn:hover{
     cursor: pointer;
     color: white;
@@ -95,7 +96,7 @@ header{
     width: 100%;
     height: 100%;
     opacity: 0.5;
-    background-image: url("./asset/mainbackground.png");
+    background-image: url(../img/mainbackground.png);
     background-size: cover;
 }
 
@@ -108,7 +109,7 @@ header{
 }
 
 .section_sport{
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background-color: rgb(255, 255, 255);
     color: white;
@@ -125,7 +126,7 @@ header{
   font-weight: bold;
   width: 100%;
   height: 100vh;
-  background-image: url(./asset/mainbackground.png);
+  background-image: url(../img/mainbackground.png);
   background-size: cover;
 }
 
@@ -232,25 +233,16 @@ header{
 }
 
 .item:nth-child(2){
-    background-image: url(./asset/tennis.png);
+    background-image: url(../img/tennis.png);
 }
 .item:nth-child(3){
-    background-image: url(./asset/muscu.png);
+    background-image: url(../img/muscu.png);
 }
 .item:nth-child(4){
-    background-image: url(./asset/petanque.png);
+    background-image: url(../img/petanque.png);
 }
 .item:nth-child(5){
-    background-image: url(./asset/skate.png);
-}
-.item:nth-child(6){
-    background-image: url(./asset/tennis.png);
-}
-.item:nth-child(7){
-    background-image: url(./asset/muscu.png);
-}
-.item:nth-child(8){
-    background-image: url(./asset/petanque.png);
+    background-image: url(../img/skate.png);
 }
 
 body{
@@ -271,4 +263,237 @@ h2{
     font-size: 50px;
     margin-bottom: 7%;
     transform: skewX(-13deg);
+    align-items: center;
+}
+
+.coaching{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coaching_text{
+    font-family: 'Titillium Web', sans-serif;
+    width: 40%;
+}
+
+.coaching_img{
+    width: 40%;
+}
+
+.section_services{
+    margin-top: 10vh;
+    width: 100%;
+    height: 130vh;
+    background-image: url(./Asset/img/gymbackground.png);
+    background-color: black;
+    background-size: cover;
+    box-shadow: 0px 0px 15px black;
+    margin-bottom: 20vh;
+    position: relative;
+}
+
+.blackmask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 300px;
+}
+
+.contact_background{
+    border-radius: 2px;
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    box-shadow: 0px 0px 15px black;
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact_message{
+    width: 80%;
+    height: 30%;
+}
+
+.section_nosservices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.service_div{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.33vw;
+    color: white;
+}
+
+#service_logo{
+   color: red;
+   font-size: 5vw;
+   margin-bottom: 20px;
+}
+
+.section_nosservices_background{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.nosservices{
+    margin-bottom: 0px;
+}
+
+
+/* footer */
+
+.socials {
+    padding: 0;
+  }
+  
+  footer {
+    font-family: "Titillium Web";
+    background: #ccc;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    padding-top: 50px;
+    height: 15vh;
+    background-image: url(/Asset/img/muscu.jpg);
+    background-size: 100%;
+    background-position: 25% 75%;
+    z-index: 9;
+  }
+  .footerContent {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 10px 10px 0;
+  }
+  .footerContent ul {
+    height: 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }
+  .footerContent i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    font-size: 250%;
+    color: rgb(255, 255, 255);
+  }
+  .footerContent i:hover {
+    color: rgb(114, 114, 114);
+    transition: 0.5s;
+  }
+  .footerContent a {
+    text-decoration: none;
+  }
+  footer h4 {
+    padding: 10px;
+  }
+  footer .filterFooter {
+    background-color: rgba(0, 0, 0, 0.212);
+    height: 100%;
+    overflow: auto;
+  }
+  footer .textFooter {
+    align-items: center;
+    color: white;
+  }
+  footer h4 {
+    color: white;
+  }
+  li {
+    z-index: 20;
+  }
+  .filterBlack {
+    background-color: rgba(0, 0, 0, 0.548);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+  }
+
+  /* Contact */
+
+  input[type="text"],
+textarea,
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+label {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #d80000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #7c0000;
+}
+
+.containerContact {
+  /* Ajouter box-sizing */
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #0000003d;
+  padding: 20px;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+.bgImage {
+  background-image: url("/Asset/img/contact.jpg");
+  background-position: 25% 25%;
+  height: 100vh;
+}
+.titleForm {
+  color: white;
+  font-size: 3em;
+}
+.whiteForm {
+  color: white;
+  font-weight: 500;
 }

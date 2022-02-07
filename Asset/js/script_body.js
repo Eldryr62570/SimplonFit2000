@@ -9,11 +9,8 @@ var cadre_sport1 = document.getElementById("item1");
 var cadre_sport2 = document.getElementById("item2");
 var cadre_sport3 = document.getElementById("item3");
 var cadre_sport4 = document.getElementById("item4");
-var cadre_sport5 = document.getElementById("item5");
-var cadre_sport6 = document.getElementById("item6");
-var cadre_sport7 = document.getElementById("item7");
 
-var cadre_sportList = [cadre_sport1, cadre_sport2, cadre_sport3, cadre_sport4, cadre_sport5, cadre_sport6, cadre_sport7]
+var cadre_sportList = [cadre_sport1, cadre_sport2, cadre_sport3, cadre_sport4]
 
 const wrapper = document.getElementById("wrapper")
 

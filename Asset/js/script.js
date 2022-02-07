@@ -6,7 +6,6 @@ var dropdown_dropped = false
 
 window.onload = function(){
     set_dropdown()
-    bonjour.style = 7;
 }
 
 function set_dropdown(){
