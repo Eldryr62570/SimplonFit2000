@@ -1,0 +1,525 @@
+* {
+  margin: 0px;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  height: 7vh;
+  min-height: 20px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 15px black;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.dropdown {
+  opacity: 0;
+  position: fixed;
+  top: 8vh;
+  right: 4%;
+  width: 30vh;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.568);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+  transition: all 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar_btn {
+  color: rgba(255, 255, 255, 0.801);
+  font-family: "Titillium Web", sans-serif;
+  height: 15%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.navbar_btn:hover {
+  cursor: pointer;
+  color: white;
+  text-shadow: 0px 0px 5px white;
+}
+
+.navbar_logo {
+  height: 60%;
+  margin: 5%;
+  z-index: 1;
+}
+.navbar_logo:hover {
+  cursor: pointer;
+}
+
+.navbar_img {
+  height: 40%;
+  margin: 5%;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.navbar_img:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.banner {
+  overflow: hidden;
+  height: 50em;
+  width: 100%;
+}
+.IMGban {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.textleft {
+  width: 50%;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+.para {
+  color: black;
+  font-size: large;
+  font-family: "Titillium Web", sans-serif;
+  line-height: 25px;
+}
+.imgdiv {
+  overflow: hidden;
+  height: 10%;
+  width: 50%;
+  margin-right: 10%;
+}
+
+.imgright {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+}
+.espace {
+  height: 15vh;
+}
+.section2 {
+  width: 100%;
+  height: 20%;
+}
+.div_bas {
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30em;
+  width: 100%;
+  padding: 2% 0% 2% 0%;
+}
+.IMGban2 {
+  object-fit: cover;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  margin-top: 50vh;
+}
+.sectexe {
+  margin-top: 0%;
+  width: 100vw;
+  height: 25vh;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exercises {
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  width: 100vw;
+  height: 25vh;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  background-color: white;
+  border-radius: 20px;
+  width: 23vw;
+  height: 25vh;
+  color: rgb(255, 255, 255);
+  margin: 0% 3% 0% 3%;
+}
+.bouton {
+  display: flex;
+  background-color: black;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 5vh;
+  margin: 0%;
+  margin-top: 5vh;
+  border-radius: 5px;
+}
+
+.bouton2 {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 5vh;
+  margin: 0%;
+  margin-top: 5vh;
+  border-radius: 5px;
+  margin-bottom: 10vh;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.bouton:hover {
+  background-color: #d11328;
+}
+.lien {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div_btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0% 0% 0% 0%;
+}
+.sectexe2 {
+  margin-top: 0%;
+  width: 100vw;
+  height: 55vh;
+  background-color: rgb(0, 0, 0);
+}
+.boxb {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  background-color: white;
+  border-radius: 20px;
+  width: 23vw;
+  height: 25vh;
+  color: black;
+  margin: 0% 3% 0% 3%;
+}
+
+.titre {
+  font-size: 7vh;
+  font-family: "Bebas Neue", cursive;
+  height: 5vh;
+  margin-bottom: 5vh;
+}
+.titre2 {
+  font-size: 7vh;
+  font-family: "Bebas Neue", cursive;
+  height: 5vh;
+  margin-bottom: 5vh;
+  color: white;
+  margin-top: 5vh;
+}
+.black {
+  background-color: black;
+  width: 100vw;
+  height: 50vh;
+  margin: 5% 0% 0% 0%;
+}
+.white {
+  background-color: white;
+  width: 100vw;
+  height: 50vh;
+  margin: 5% 0% 0% 0%;
+}
+.bouton2:hover {
+  background-color: #d11328;
+}
+.lien2 {
+  color: black;
+  font-family: "Bebas Neue", cursive;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bold {
+  font-weight: bold;
+}
+.stext {
+  color: #848484;
+  font-family: "Titillium Web", sans-serif;
+  margin-bottom: 80px;
+}
+.text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.space {
+  height: 15vh;
+  background-color: rgb(0, 0, 0);
+}
+.all_black {
+  background-color: black;
+}
+
+.black_margin {
+  margin-top: 0% 0% 0% 0%;
+}
+.white_margin {
+  margin-top: 0% 0% 0% 0%;
+}
+.box1 {
+  background-image: url(../img/box1.jpg);
+  object-fit: cover;
+}
+.box2 {
+  background-image: url(../img/box2.jpg);
+  object-fit: cover;
+}
+.box3 {
+  background-image: url(../img/box3.jpg);
+  object-fit: cover;
+}
+.box4 {
+  background-image: url(../img/box4.jpg);
+  object-fit: cover;
+}
+.box5 {
+  background-image: url(../img/box5.jpg);
+  object-fit: cover;
+}
+.box6 {
+  background-image: url(../img/box6.jpg);
+  object-fit: cover;
+}
+.box7 {
+  background-image: url(../img/box7.jpg);
+  object-fit: cover;
+}
+.box8 {
+  background-image: url(../img/box8.jpg);
+  object-fit: cover;
+}
+.box9 {
+  background-image: url(../img/box9.jpg);
+  object-fit: cover;
+}
+.box10 {
+  background-image: url(../img/box10.jpg);
+  object-fit: cover;
+}
+.box11 {
+  background-image: url(../img/box11.jpg);
+  object-fit: cover;
+}
+.box12 {
+  background-image: url(../img/box12.jpg);
+  object-fit: cover;
+}
+
+/*Footer*/
+.socials {
+  padding: 0;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 4%;
+}
+
+footer {
+  font-family: "Titillium Web";
+  background: #ccc;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 25vh;
+  background-image: url(/Asset/img/muscu.jpg);
+  background-size: 100%;
+  background-position: 25% 75%;
+  z-index: 9;
+  margin-top: 35vh;
+}
+.footerContent {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 10px 10px 0;
+}
+.footerContent ul {
+  height: 50px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+.footerContent i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  font-size: 250%;
+  color: rgb(255, 255, 255);
+}
+.footerContent i:hover {
+  color: rgb(114, 114, 114);
+  transition: 0.5s;
+}
+.footerContent a {
+  text-decoration: none;
+}
+footer h4 {
+  padding: 10px;
+}
+footer .filterFooter {
+  background-color: rgba(0, 0, 0, 0.212);
+  height: 100%;
+  overflow: auto;
+}
+footer .textFooter {
+  align-items: center;
+  color: white;
+  position: absolute;
+}
+footer h4 {
+  color: white;
+}
+li {
+  z-index: 20;
+}
+.filterBlack {
+  background-color: rgba(0, 0, 0, 1);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  bottom: 0%;
+  display: flex;
+}
+
+/* Contact */
+
+input[type="text"],
+textarea,
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+label {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #d80000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #7c0000;
+}
+
+.containerContact {
+  /* Ajouter box-sizing */
+
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #0000003d;
+  padding: 20px;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+.titleForm {
+  color: white;
+  font-size: 2em;
+}
+.whiteForm {
+  color: white;
+  font-weight: 500;
+}
+
+.footerimagge {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+footer p {
+  width: 100%;
+}
+
+h2 {
+  background-color: red;
+  font-family: "Bebas Neue";
+  color: white;
+  width: fit-content;
+  padding: 2px 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-bottom: 7%;
+  transform: skewX(-13deg);
+  align-items: center;
+}
+
+.page_title{
+  position: absolute;
+  z-index: 999;
+  width: 15%;
+  left: 42.5%;
+  height: 15vh;
+  top: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+}
